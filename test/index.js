@@ -9,8 +9,8 @@ client.login().then(async (res)=>{
     const userSession = await client.session();
     console.log(userSession);
 
-    /*const newAccount = await client.register({username: "", email: "", password: "", tos: true});
-    console.log(newAccount);*/
+    const newAccount = await client.register({username: "", email: "", password: "", tos: true});
+    console.log(newAccount);
 
 
     const events = await client.events();
