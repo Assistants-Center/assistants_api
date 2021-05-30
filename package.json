@@ -15,5 +15,23 @@
     "fetch-cookie": "^0.11.0",
     "node-fetch": "^2.6.1",
     "socket.io-client": "^4.1.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/breftejk/assistants_api.git"
+  },
+  "keywords": [
+    "fortniteapi",
+    "fortnite",
+    "assistants.ga",
+    "assistants",
+    "assistants_center",
+    "breftejk",
+    "api"
+  ],
+  "bugs": {
+    "url": "https://github.com/breftejk/assistants_api/issues"
+  },
+  "homepage": "https://github.com/breftejk/assistants_api#readme"
 }
