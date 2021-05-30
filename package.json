@@ -1,6 +1,6 @@
 {
-  "name": "assistants_api",
-  "version": "1.0.0",
+  "name": "assistants-api",
+  "version": "0.0.1",
   "description": "Assistants Center API Client",
   "main": "index.js",
   "directories": {
@@ -21,17 +21,9 @@
     "type": "git",
     "url": "git+https://github.com/breftejk/assistants_api.git"
   },
-  "keywords": [
-    "fortniteapi",
-    "fortnite",
-    "assistants.ga",
-    "assistants",
-    "assistants_center",
-    "breftejk",
-    "api"
-  ],
   "bugs": {
     "url": "https://github.com/breftejk/assistants_api/issues"
   },
-  "homepage": "https://github.com/breftejk/assistants_api#readme"
+  "homepage": "https://github.com/breftejk/assistants_api#readme",
+  "keywords": []
 }
