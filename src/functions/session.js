@@ -1,7 +1,7 @@
 module.exports = async (fetch) => {
     let result;
     let error;
-    await fetch("https://assistants.ga/session", {
+    await fetch("https://node.assistants.ga/session", {
         method: "GET",
     }).then(res=>res.json()).then((json)=>{
         if(json.error)error = json
