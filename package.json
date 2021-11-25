@@ -1,6 +1,6 @@
 {
   "name": "assistants-api",
-  "version": "1.0.0-readmefix",
+  "version": "1.2.0",
   "description": "Assistants Center API Client",
   "main": "index.js",
   "directories": {
