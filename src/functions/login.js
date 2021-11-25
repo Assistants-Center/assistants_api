@@ -1,7 +1,7 @@
 module.exports = async (parametr, password, fetch) => {
     let result;
     let error;
-    await fetch("https://assistants.ga/auth/login", {
+    await fetch("https://node.assistants.ga/auth/login", {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',
