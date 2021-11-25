@@ -4,7 +4,7 @@ const EventEmitter = require('events');
 
 const io = require("socket.io-client");
 
-const socket = io("wss://assistants.ga", {});
+const socket = io("wss://node.assistants.ga", {});
 
 const shop = new EventEmitter();
 const sections = new EventEmitter();
