@@ -6,7 +6,7 @@ module.exports = async (username, email, password, tos, fetch) => {
     if(tos!=true)return {error:true,message:"You must accept ToS to create a new account."};
     let result;
     let error;
-    await fetchNewCookies("https://assistants.ga/auth/register", {
+    await fetchNewCookies("https://node.assistants.ga/auth/register", {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',
