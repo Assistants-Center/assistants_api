@@ -1,5 +1,3 @@
-const nodeFetch = require('node-fetch');
-const fetch = require('fetch-cookie')(nodeFetch);
 const EventEmitter = require('events');
 
 const io = require("socket.io-client");
@@ -22,6 +20,9 @@ const methods = {
 
 class AssistantsClient {
     constructor(parametr, password) {
+        const nodeFetch = require('node-fetch');
+        const fetch = require('fetch-cookie')(nodeFetch);
+        this.fetch = fetch;
         this.user = null;
         if(!parametr || !password)throw new Error("Assistants: No credentials were given or one of them is missing.");
         this.parametr = parametr;
@@ -40,6 +41,7 @@ class AssistantsClient {
     }
 
     async login() {
+        let fetch = this.fetch;
         let data = (await methods.login(this.parametr, this.password, fetch));
         if(!data.error)this.user = data.data;
         return data;
@@ -53,6 +55,7 @@ class AssistantsClient {
     }
 
     async register({username,email,password, tos=true}) {
+        let fetch = this.fetch;
         let data = (await methods.register(username, email, password, tos, fetch));
         return data;
     }
